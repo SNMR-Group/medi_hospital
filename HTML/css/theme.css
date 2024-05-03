@@ -18526,7 +18526,7 @@ ul {
 
 .service-details__sidebar {
   position: relative;
-  background-color: var(--tolak-gray, #ecf2fc);
+  background-color: var( #ecf2fc);
   padding: 30px 30px 35px;
 }
 .service-details__sidebar__title {
