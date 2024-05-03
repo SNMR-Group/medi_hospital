@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Assets/favicon.jpg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Rubik:wght@400;500;700&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-...replace_with_actual_integrity_value..." crossorigin="anonymous" />
+
+        <link href="css/theme.css" rel="stylesheet" />
+
+    <title>Medi Hospital</title>
+</head>
+<style>
+  section {
+    padding: 50px 0;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .col-lg-4 {
+    margin-bottom: 30px;
+  }
+  .card-design {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  .card-design img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #dee2e6;
+  }
+  .container-text {
+    padding: 20px;
+  }
+  h1 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+  }
+  p {
+    color: #555;
+  }
+  a {
+    color: #007bff;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+</style>
+
+
+
+<body id="top">
+
+
+    <!-- 
+    - #PRELOADER
+  -->
+
+    <div class="preloader" data-preloader>
+        <div class="circle"></div>
+    </div>
+
+
+    <!-- header -->
+
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo 5 background removed.png" width="150" height="60" alt="Doclab home">
+            </a>
+            <!-- Removed the title -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div> <!-- Closing container-fluid here -->
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end custom-list">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html" style="font-size: 25px; color:#1B71A1; font-weight: bold;">HOME</a>
+                </li>
+                <li class="nav-item" style="margin-left: 20px;"> <!-- Added margin -->
+                    <a class="nav-link active" aria-current="page" href="doctors.html" style="font-size: 25px; color:#1B71A1; font-weight: bold;">DOCTOR</a>
+                </li>
+                <li class="nav-item" style="margin-left: 20px;"> <!-- Added margin -->
+                    <a class="nav-link active" aria-current="page" href="departments.html" style="font-size: 25px; color:#1B71A1; font-weight: bold;">SERVICES</a>
+                </li>
+                <li class="nav-item dropdown dropdown-hover" style="margin-left: 20px;"> <!-- Added margin -->
+                    <a class="nav-link dropdown-toggle" href="departments.html" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 25px; color:#1B71A1; font-weight: bold;">
+                        DEPARTMENT
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-heart"></i> Cardiology</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-brain"></i> Neurology</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-user-md"></i> General Surgery</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-wheelchair"></i> Physiotherapy</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-user-nurse"></i> Psychiatry</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-radiation"></i> Radiology</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-syringe"></i> Anesthesia</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-disease"></i> Oncology</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-child"></i> Pediatrics</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-baby-carriage"></i> Obstetrics and Gynecology</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-bone"></i> Orthopedic</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-procedures"></i> Internal Medicine</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item" style="margin-left: 20px;"> <!-- Added margin -->
+                    <a class="nav-link active" aria-current="page" href="contact.html" style="font-size: 25px; color:#1B71A1; font-weight: bold;">CONTACT</a>
+                </li>
+            </ul>
+        </div> <!-- Closing navbar-collapse here -->
+    </nav>
+    
+      
+      
+    </header>
+    <section>
+        
+    </section>
+
+     <!-- <section> begin ============================-->
+        <section class="py-5">
+
+            <div class="container">
+              <div class="row">
+                <div class="col-12 py-3">
+                  <div class="bg-holder bg-size" style="background-image:url(img/gallery/people.png);background-position:top center;background-size:contain;">
+                  </div>
+                  <!--/.bg-holder-->
+    
+                  <h1 class="text-center">Contact Us</h1>
+                </div>
+              </div>
+            </div>
+            <!-- end of .container-->
+    
+          </section>
+          <!-- <section> close ============================-->
+          <!-- ============================================-->
+    
+    
+          <section class="py-8">
+            <div class="container">
+              <div class="row">
+                <div class="bg-holder bg-size" style="background-image:url(img/gallery/dot-bg.png);background-position:bottom right;background-size:auto;">
+                </div>
+                <!--/.bg-holder-->
+    
+                <div class="col-lg-6 z-index-2 mb-5"><img class="w-100" src="img/gallery/appointment.png" alt="..." /></div>
+                <div class="col-lg-6 z-index-2">
+                  <form class="row g-3"  action="https://getform.io/f/qbloerna" method="POST">
+                    <div class="col-md-6">
+                      <label class="visually-hidden" for="inputName">Name</label>
+                      <input class="form-control form-livedoc-control" name="name" id="inputName" type="text" placeholder="Name" />
+                    </div>
+                    <div class="col-md-6">
+                      <label class="visually-hidden" for="inputPhone">Phone</label>
+                      <input class="form-control form-livedoc-control" name="phone" id="inputPhone" type="text" placeholder="Phone" />
+                    </div>
+                    
+                    <div class="col-md-6">
+                      <label class="form-label visually-hidden" for="inputEmail">Email</label>
+                      <input class="form-control form-livedoc-control" name="Email"id="inputEmail" type="email" placeholder="Email" />
+                    </div>
+                    <div class="col-md-12">
+                      <label class="form-label visually-hidden" for="validationTextarea">Message</label>
+                      <textarea class="form-control form-livedoc-control"name="Message" id="validationTextarea" placeholder="Message" style="height: 250px;" required="required"></textarea>
+                    </div>
+                   
+                    <div class="col-12">
+                      <div class="d-grid">
+                        <button class="btn btn-primary rounded-pill" type="submit">Get in touch</button>
+                      </div>
+                    </div>
+                   
+                  
+                   
+                  </form>
+                </div>
+              </div>
+            </div>
+          </section>
+    
+    
+          <!-- ============================================-->
+    
+    
+    
+
+
+     <!-- Footer -->
+
+     <footer class="footer" style="background-image: url('/Assets/footer-bg.png')">
+        <div class="container">
+
+            <div class="section footer-top">
+
+                <div class="footer-brand" data-reveal="bottom">
+
+                    <a href="#" class="logo">
+                        <img src="/Assets/hospital logo.png" width="136" height="46" loading="lazy" alt="Doclab home">
+                    </a>
+
+                    <ul class="contact-list has-after">
+
+                        <li class="contact-item">
+
+                            <div class="item-icon">
+                                <ion-icon name="mail-open-outline"></ion-icon>
+                            </div>
+
+                            <div>
+                                <p>
+                                     Email : <a href="mailto:medihospital01@gmail.com"
+                                        class="contact-link">medihospital01@gmail.com</a>
+                                </p>
+
+                                <p>
+                                    Inquiries : <a href="medihospital01@gmail.com" class="contact-link">medihospital01@gmail.com</a>
+                                </p>
+                            </div>
+
+                        </li>
+
+                        <li class="contact-item">
+
+                            <div class="item-icon">
+                                <ion-icon name="call-outline"></ion-icon>
+                            </div>
+
+                            <div>
+                                <p>
+                                    Office Telephone : <a href="tel:+91 9939587678"
+                                        class="contact-link">+91 9939587678</a>
+                                </p>
+
+                                <p>
+                                    Mobile : <a href="tel:+91 9241959991" class="contact-link">+91 9241959991</a>
+                                </p>
+                            </div>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="footer-list" data-reveal="bottom">
+
+                    <p class="headline-sm footer-list-title">About Us</p>
+
+                    <p class="text">
+                        "Medi Hospital: Nurturing Health, Inspiring Hope."
+                    </p>
+                  
+                    <P>  Contact Us:- </P>
+                    <p>Address- Hirak Bypass Road ,8 Lane Sugiadih ,Dhanbad-828109</p>
+                   <p>phone no- 9241959991, 9241959992</p>
+
+
+
+                </div>
+
+                <ul class="footer-list" data-reveal="bottom">
+
+                    <li>
+                        <p class="headline-sm footer-list-title">Services</p>
+                    </li>
+
+
+
+
+
+
+
+                    <li>
+                        <a href="departments.html" class="text footer-link">What We Offer</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="text footer-link">Latest News</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html" class="text footer-link">Contact Us</a>
+                    </li>
+
+                    
+                    <li>
+                        <a href="#" class="text footer-link">Terms of Use</a>
+                    </li>
+
+                    <li>
+                        <a href="departments.html" class="text footer-link">Our Services</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="text footer-link">The Team List</a>
+                    </li>
+
+                </ul>
+
+                <ul class="footer-list" data-reveal="bottom">
+
+                    <li>
+                        <p class="headline-sm footer-list-title">Departments</p>
+                    </li>
+
+                    <li>
+                        <a href="#" class="text footer-link"style="text-decoration: none;">cardiology</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text footer-link"style="text-decoration: none;">Neurology</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text footer-link"style="text-decoration: none;">General Surgery</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text footer-link"style="text-decoration: none;">Physiotherapy</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text footer-link"style="text-decoration: none;">psychiatry
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text footer-link" style="text-decoration: none;">Radiology</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="text footer-link" style="text-decoration: none;">Anethesia</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text footer-link" style="text-decoration: none;">Oncology</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text footer-link" style="text-decoration: none;">Pediatrics
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text footer-link" style="text-decoration: none;">Obestetrics and Gynaecology</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text footer-link" style="text-decoration: none;">Orthopedic</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text footer-link" style="text-decoration: none;">Internal medicine</a>
+                    </li>
+                </ul>
+
+                <div>
+                    <h1 style="color: white;">Find Medi Hospital in google map</h1>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29202.193187593573!2d86.42005985076578!3d23.80884853232242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f6bb00213694c7%3A0x8c2940540195b350!2sMedi%20Hospital!5e0!3m2!1sen!2sin!4v1710066054788!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <p class="text copyright">
+                    &copy; Medi Hospital 2024 | Designed and Developed by Sushant and SNMR GROUP
+                </p>
+
+                <ul class="social-list">
+
+                    
+
+                    <li>
+                        <a href="https://twitter.com/MEDIHOSPIT94135" class="social-link">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.facebook.com/profile.php?id=61558502476593&mibextid=ZbWKwL" class="social-link">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.instagram.com/medihospital?igsh=c3c3aHFwbWsxOHdl" class="social-link">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://pin.it/4oeIzoqRm" class="social-link">
+                            <ion-icon name="logo-pinterest"></ion-icon>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+
+    <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+        <ion-icon name="chevron-up"></ion-icon>
+    </a>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="/JavaScript/script.js"></script>
+    <!-- .............................doctors,services................................. -->
+    <script src="vendors/@popperjs/popper.min.js"></script>
+    <script src="vendors/bootstrap/bootstrap.min.js"></script>
+    <script src="vendors/is/is.min.js"></script>
+    <script src="https://scripts.sirv.com/sirvjs/v3/sirv.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+    <script src="vendors/fontawesome/all.min.js"></script>
+    <script src="js/theme.js"></script>
+</body>
+
+
+</html>
